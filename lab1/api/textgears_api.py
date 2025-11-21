@@ -38,7 +38,9 @@ class TextGrearsApi(BaseApi):
                 },
                 data=data,
             )
+            print(data)
             response.raise_for_status()
+
         except requests.exceptions.RequestException as e:
             raise RuntimeError(
                 f"TextGears API request failed: {str(e)}"
@@ -60,6 +62,7 @@ class TextGrearsApi(BaseApi):
             Строка со списком ошибок
         
         """
+        print(file)
         if 'response' not in file:
             raise ValueError("Wrong json structure")
         response: Dict[str, any] = file['response']

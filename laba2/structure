@@ -1,0 +1,18 @@
+w = random_normal()
+tolerance = 0.0001
+while abs(err)> tolerance:
+    f = X.dot(w)
+    err = f - y
+    grad = 2*X.T(err)/N
+    w -= lr* gradient
+
+
+
+w = random_normal()
+repeat A times:
+    for i=B, i<=n, i+=B:
+        X_batch, y_batch = data[i-b,i], data_y[i-b,i]
+        f = X_batch.dot(w)
+        err = f- y_batch
+        grad = 2*X.t dot (err)/b
+        w -= lr*grad

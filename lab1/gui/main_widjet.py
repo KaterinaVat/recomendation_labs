@@ -82,8 +82,8 @@ class MyWidget(QtWidgets.QWidget):
 
         self.text = QtWidgets.QLabel("Анализ текста на ошибки", 
                                     alignment=QtCore.Qt.AlignCenter)
-            # создает новый объект типа, которому можно 
-            # придавать разные характеристики начертания
+        # создает новый объект типа, которому можно 
+        # придавать разные характеристики начертания
         self.text.setObjectName("title_label")
         font = QtGui.QFont() 
         font.setPointSize(20)  

@@ -38,6 +38,7 @@ class SpellCheckProApi(BaseApi):
                 },
                 json=data,
             )
+            print(data)
             response.raise_for_status()
         except requests.exceptions.RequestException as e:
             raise RuntimeError(
@@ -61,6 +62,7 @@ class SpellCheckProApi(BaseApi):
             Строка со списком ошибок
         
         """
+        print(file)
         if file.__len__ == 0:
             return []
         else:
