@@ -7,3 +7,9 @@ env/
 venv/
 .venv/
 .env
+storage/json_storage.py
+data/articles.csv
+data/customers.csv
+data/transactions_train.csv
+data/data_users.json
+
